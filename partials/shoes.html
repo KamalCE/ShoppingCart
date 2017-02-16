@@ -1,0 +1,64 @@
+
+<div class="container mar-top-20">
+  <div ng-hide="hideMe" class="row">
+    <div  class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="images/img11.jpg" alt="...">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>Opt for an edgy ensemble by teaming these jeans with a crop top or a long tunic. Step into a pair of mules and accessorize the combination with a tan brown satchel.</p>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">More</a> 
+            <!-- <a href="#" class="btn btn-default" role="button">Button</a> -->
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="images/img12.jpg" alt="...">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>Opt for an edgy ensemble by teaming these jeans with a crop top or a long tunic. Step into a pair of mules and accessorize the combination with a tan brown satchel.</p>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">More</a> 
+            <!-- <a href="#" class="btn btn-default" role="button">Button</a> -->
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="images/img13.jpg" alt="...">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>Opt for an edgy ensemble by teaming these jeans with a crop top or a long tunic. Step into a pair of mules and accessorize the combination with a tan brown satchel.</p>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">More</a> 
+            <!-- <a href="#" class="btn btn-default" role="button">Button</a> -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="shoe in shoes">
+    <a href="#/description/{{shoe}}">
+      <div class="thumbnail" >
+        <img src="images/img14.png" alt="...">
+        <div class="caption">
+          <h3>{{shoe.name}}</h3>
+          <p>{{shoe.desc}}</p>
+          <p>
+            <!-- <a href="#" class="btn btn-default" role="button">Button</a> -->
+          </p>
+        </div>
+      </div>
+      </a>
+    </div>
+    </div>
+  </div>
+      

@@ -1,0 +1,69 @@
+
+<!-- navuigation ends -->
+
+<div class="container mar-top-20">
+	<!-- START THE FEATURETTES -->
+
+  <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" name="searchText" ng-model="searchText" placeholder="Search" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Lehenga is a common outfit for any wedding or engagement party but to look not common find our latest designer wedding lehengas. There are exclusive range of lehengas with so many colors and fabrics on our page, explore your sense of design and select our partywear lehenga, lehanga choli, Rajasthani rajputi poshak for particular event or function.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/e1.jpg" data-holder-rendered="true">
+        </div>
+      </div>
+
+
+
+      <hr class="featurette-divider">
+
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">In weddings and reception functions, nothing can beat the glam of Lehengas. What makes the Lehengas so special is the way they add the beauty to a woman’s personality and their glowing bright colors, flared long skirt with designer border add a touch of brightness and extra charm to their overall look.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/e5.jpg" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div ng-repeat="ethnics in ethnic | filter:searchText">
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">{{ethnics.name}}<span class="text-muted"> {{ethnics.comments}}</span></h2>
+          <p class="lead">{{ethnics.desc}}</p>
+        </div>
+        <a href="#/description/{{ethnics}}">
+       <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/e4.jpg"  data-holder-rendered="true">
+        </div>
+        </a>
+
+      </div>
+
+      <hr class="featurette-divider">
+    </div>
+
+      
+
+      
+
+      <!-- /END THE FEATURETTES -->
+    </div>

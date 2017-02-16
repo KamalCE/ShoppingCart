@@ -1,0 +1,47 @@
+<div class="container mar-top-20">
+	<h3 class="text-center"><strong> Add Product</strong></h3>
+	<form class="form-horizontal mar-top-20" name="productAdd" novalidate="novalidate">
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">Catagory</label>
+	    <div class="col-sm-10">
+	      <select class="form-control" name="category" id="category" ng-model="product.category" required="true">
+			  <option>Shoes</option>
+			  <option>Dress</option>
+			  <option>Ethenic Wear</option>
+			</select>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">Title</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control"  name="name" id="name" ng-model="product.name" placeholder="Enter title for product" required="true">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">Description</label>
+	    <div class="col-sm-10">
+	      <textarea type="text" class="form-control" name="desc" id="desc" ng-model="product.desc" placeholder="Enter description for product" required="true"></textarea>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">Comments</label>
+	    <div class="col-sm-10">
+	      <textarea type="text" class="form-control" name="comments" id="comments" ng-model="product.comments" placeholder="Enter comment for product" required="true"></textarea>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	  	<label class="col-sm-2 control-label">Price</label>
+	    <div class="col-sm-10">	    
+		  	<div class="input-group">
+			  <span class="input-group-addon">₹</span>
+			  <input type="text" class="form-control"name="price" id="price" ng-model="product.price" placeholder="Price" aria-describedby="price" required="true">
+			</div>
+		</div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <button ng-disabled="productAdd.name.$error.required || productAdd.desc.$error.required || productAdd.price.$error.required || productAdd.category.$error.required || productAdd.comments.$error.required"  type="submit" class="btn btn-primary" ng-click="addProduct(product)">Add</button>
+	    </div>
+	  </div>
+	</form>
+</div>

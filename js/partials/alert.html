@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Portal</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+	<script src = "js/angular.min.js"></script>
+  <script src = "js/angular-route.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+</head>
+<body ng-app = "shopping" ng-controller = "homeController">
+<!-- <navigation start> -->
+	<div ng-include = "'includes/navigation.html'"></div>
+<!-- navuigation ends -->
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-muted">Crazy Shopping</h3>
+      </div>
+      <form>
+        <input type="" name="">
+      </form>
+      <button id='alert'>Click</button>
+     
+
+    </div> <!-- /container -->
+
+  
+<script type="text/javascript">
+  $('#alert').on('click',function(){
+    $( '<div class="alert alert-success" role="alert">Product Added Successfully.</div>' ).insertBefore( "form" ).delay(2000).fadeOut(400);
+  });
+</script>
+</body>

@@ -1,0 +1,18 @@
+<div class="container mar-top-20">
+	<h3 class="text-center" name="CatagoryName" ng-model="desc.CatagoryName" id="CatagoryName"></h3>
+	<div class="row featurette mar-top-20">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/e4.jpg"  data-holder-rendered="true">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">{{producttitle}}</h2>
+          <p class="lead"><strong>Description: </strong> {{productdescription}}</p>
+          <p class="lead"><strong>Price: </strong> ₹ {{productprice}}</p>
+          <p>
+			  <button type="button" class="btn btn-primary btn-lg" ng-click="addToCart()">Add to Cart</button>
+		  </p>
+		</div>
+    </div>
+
+      <hr class="featurette-divider">
+</div>

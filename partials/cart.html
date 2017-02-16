@@ -1,0 +1,23 @@
+<div class="container mar-top-20">
+		<table class="table">
+		  <thead>
+		  	<tr class="info">
+		  		<td style="width:15%">Image</td>
+		  		<td>Name</td>
+		  		<td>Price</td>
+		  		<td>Buy</td>
+		  	</tr>
+		  </thead>
+		  <tbody>
+		  
+			  	<tr ng-repeat="carts in cart">
+			  		<td><img src="images/1.jpg" class="img-thumbnail"></td>
+			  		<td>{{carts.name}}</td>
+			  		<td>{{carts.price}}</td>
+			  		<td><button class="btn btn-primary">Place Order</button></td>
+			  	</tr>
+		  
+		  	
+		  </tbody>
+		</table>
+	</div>
